@@ -1,12 +1,12 @@
-class Field
+class Field<GenericType>
 {
     private String name;
-    private String data;
+    private GenericType data;
     
     public class Field()
     {
-        this.name = "blank";
-        this.data = "blank";
+        this.data = new GenericType;
+        this.name = data.getName();
     }
     
     public String getName()
@@ -19,12 +19,12 @@ class Field
         this.name = newName;
     }
     
-    public String getData()
+    public GenericType getData()
     {
         return this.data;
     }
     
-    public void setData(String newData)
+    public void setData(GenericData newData)
     {
         this.data = newData;
     }

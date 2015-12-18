@@ -14,11 +14,13 @@ class TitleBar
     public void addField(int indexAdd , Field itemAdd)
     {
         this.fields.add(indexAdd , itemAdd);
+        this.numOfFields++;
     }
     
     public void deleteField(int indexRemove)
     {
         this.fields.remove(indexRemove);
+        this.numOfFields--;
     }
     
     public void moveField(int oldIndex , int newIndex , Field item)
